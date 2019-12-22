@@ -5,7 +5,7 @@ const path = require("path");
 const url = require("url");
 
 let win;
-const basePath = "";
+const basePath = "https://www.google.com/";
 
 function createWindow(){
    	win = new BrowserWindow({width : 500, height : 500});
@@ -18,10 +18,11 @@ function createWindow(){
    // 	protocol: "file",
    // 	slashes: true
    // }))
-   	macaddress.one(function (err, mac) {
-   	   win.loadURL(basePath+mac);
-   	     console.log("Mac address for this host: %s", mac);  
-   	});
+      win.loadURL(basePath);
+   	// macaddress.one(function (err, mac) {
+   	//    win.loadURL(basePath+mac);
+   	//      console.log("Mac address for this host: %s", mac);  
+   	// });
 }
 
 app.on("ready", createWindow);
