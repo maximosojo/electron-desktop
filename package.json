@@ -1,5 +1,5 @@
 {
-  "name": "mpandco_desktop",
+  "name": "google_desktop",
   "version": "1.0.0",
   "description": "APP Desktop for mPandco",
   "main": "./main.js",
@@ -10,9 +10,9 @@
     "dist": "build"
   },
   "author": "Máximo Sojo <maxsojo13@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "build": {
-    "appId": "mpandco_desktop_1",
+    "appId": "google_desktop_1",
     "asar": true,
     "dmg": {
       "contents": [
