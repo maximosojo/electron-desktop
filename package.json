@@ -4,12 +4,12 @@
   "description": "APP Desktop for mPandco",
   "main": "./main.js",
   "scripts": {
-    "start": "electron main.js",
+    "start": "electron .",
     "pack": "build --dir",
     "dist": "build"
   },
   "author": "Máximo Sojo <maxsojo13@gmail.com>",
-  "license": "MIT",
+  "license": "ISC",
   "dependencies": {
     "macaddress": "^0.2.9"
   },
