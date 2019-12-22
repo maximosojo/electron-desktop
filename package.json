@@ -10,11 +10,39 @@
   },
   "author": "Máximo Sojo <maxsojo13@gmail.com>",
   "license": "ISC",
+  "build": {
+    "appId": "google_desktop_1",
+    "asar": true,
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "win": {
+      "target": "NSIS",
+      "icon": "build/icon.ico"
+    }
+  },
   "dependencies": {
     "macaddress": "^0.2.9"
   },
   "devDependencies": {
     "electron": "^7.1.5",
-    "electron-builder": "^21.2.0"
+    "electron-builder": "^19.13.0"
   }
 }
