@@ -42,7 +42,7 @@
     "macaddress": "^0.2.9"
   },
   "devDependencies": {
-    "electron": "^7.1.5",
+    "electron": "^13.6.6",
     "electron-builder": "^19.13.0"
   }
 }
